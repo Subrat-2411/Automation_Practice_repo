@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[createContactWithOrganizationTest >===START===>]]>
+    </line>
+    <line>
+      <![CDATA[Sahoo]]>
+    </line>
+    <line>
+      <![CDATA[Test case Passed]]>
+    </line>
+    <line>
+      <![CDATA[createOrganizationWithIndustry >===START===>]]>
+    </line>
+    <line>
+      <![CDATA[Organization is created successfully.]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-09-12T16:19:22 IST" name="Vtiger" finished-at="2025-09-12T16:20:18 IST" duration-ms="55817">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="CreateContactTest.createContactWithOrganizationTest()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" name="createContactWithOrganizationTest" class="testNGExamples.CreateContactTest"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="CreateOrganizationTest.createOrganizationWithIndustry()[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" name="createOrganizationWithIndustry" class="testNGExamples.CreateOrganizationTest"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test started-at="2025-09-12T16:19:22 IST" name="VtigerTest" finished-at="2025-09-12T16:20:18 IST" duration-ms="55817">
+      <class name="testNGExamples.CreateOrganizationTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" started-at="2025-09-12T16:19:52 IST" name="openBrowser" finished-at="2025-09-12T16:19:55 IST" duration-ms="2613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" started-at="2025-09-12T16:19:55 IST" name="login" finished-at="2025-09-12T16:20:00 IST" duration-ms="4533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrganizationWithIndustry()[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" started-at="2025-09-12T16:20:00 IST" name="createOrganizationWithIndustry" finished-at="2025-09-12T16:20:15 IST" duration-ms="15594" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createOrganizationWithIndustry >===START===>]]>
+            </line>
+            <line>
+              <![CDATA[Organization is created successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithIndustry -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" started-at="2025-09-12T16:20:15 IST" name="logOut" finished-at="2025-09-12T16:20:18 IST" duration-ms="2616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGExamples.CreateOrganizationTest@4116aac9]" started-at="2025-09-12T16:20:18 IST" name="closeBrowser" finished-at="2025-09-12T16:20:18 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNGExamples.CreateOrganizationTest -->
+      <class name="testNGExamples.CreateContactTest">
+        <test-method is-config="true" signature="reportConfiguration()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:22 IST" name="reportConfiguration" finished-at="2025-09-12T16:19:22 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportConfiguration -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:22 IST" name="openBrowser" finished-at="2025-09-12T16:19:26 IST" duration-ms="3467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:26 IST" name="login" finished-at="2025-09-12T16:19:33 IST" duration-ms="7032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:33 IST" name="createContactWithOrganizationTest" finished-at="2025-09-12T16:19:49 IST" duration-ms="16379" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createContactWithOrganizationTest >===START===>]]>
+            </line>
+            <line>
+              <![CDATA[Sahoo]]>
+            </line>
+            <line>
+              <![CDATA[Test case Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrganizationTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:49 IST" name="logOut" finished-at="2025-09-12T16:19:52 IST" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:19:52 IST" name="closeBrowser" finished-at="2025-09-12T16:19:52 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:testNGExamples.CreateContactTest@9d5509a]" started-at="2025-09-12T16:20:18 IST" name="reportBackUp" finished-at="2025-09-12T16:20:18 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportBackUp -->
+      </class> <!-- testNGExamples.CreateContactTest -->
+    </test> <!-- VtigerTest -->
+  </suite> <!-- Vtiger -->
+</testng-results>
