@@ -13,10 +13,10 @@ import com.crm.Org.OR.ContactsPage;
 import com.crm.Org.OR.CreatingNewContactPage;
 import com.crm.Org.OR.HomePage;
 import com.crm.baseTest.BaseClass;
-import com.crm.generic.WebDriverUtility.UtilityClassObject;
 import com.crm.generic.fileUtility.ExcelUtility;
 import com.crm.generic.listenerUtility.ListenerUtility;
 //import com.crm.generic.listenerUtility.ListenerUtility;
+import com.crm.generic.objectUtility.UtilityClassObject;
 
 @Listeners(ListenerUtility.class)
 public class CreateContactTest extends BaseClass {

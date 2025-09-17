@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Test2(failed)">
+  <test thread-count="2" parallel="tests" name="regressionTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testNGExamples.CreateOrganizationTest">
+      <class name="testNGExamples.RegressionTest">
         <methods>
-          <include name="reportConfiguration"/>
-          <include name="reportBackUp"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="logOut"/>
-          <include name="createOrganizationTest"/>
+          <include name="regressionTest"/>
         </methods>
-      </class> <!-- testNGExamples.CreateOrganizationTest -->
+      </class> <!-- testNGExamples.RegressionTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- regressionTest(failed) -->
+  <test thread-count="2" parallel="tests" name="smokeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNGExamples.SmokeTest">
+        <methods>
+          <include name="smokeTest"/>
+        </methods>
+      </class> <!-- testNGExamples.SmokeTest -->
+    </classes>
+  </test> <!-- smokeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

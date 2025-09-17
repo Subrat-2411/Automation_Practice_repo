@@ -5,34 +5,26 @@ import org.testng.annotations.Test;
 import com.crm.Org.OR.ContactsPage;
 import com.crm.Org.OR.HomePage;
 import com.crm.baseTest.BaseClass;
-import com.crm.generic.WebDriverUtility.WebDriverUtility;
-import com.crm.generic.fileUtility.ExcelUtility;
-import com.crm.generic.fileUtility.FileUtility;
-import com.crm.generic.fileUtility.JavaUtility;
 
 public class CreateContactsInVTigerTest extends BaseClass {
 
 	@Test
 	public void createContactTest() throws Throwable
 	{
-
-		FileUtility futil=new FileUtility();
 		
-		WebDriverUtility wutil=new WebDriverUtility();
-		
-		JavaUtility jutil=new JavaUtility();
-		
-		ExcelUtility eutil=new ExcelUtility();
+//		JavaUtility jutil=new JavaUtility();
+//		
+//		ExcelUtility eutil=new ExcelUtility();
 		
 		
-		int ranNum=jutil.getRandomNumber();
+//		int ranNum=jutil.getRandomNumber();
 		
-		String lastName=eutil.getDataFromExcel("Organization",1,2)+ranNum;
-		
-		String website=eutil.getDataFromExcel("Organization",1,3);
-		
-		String option=eutil.getDataFromExcel("Organization",2,4);
-		
+//		String lastName=eutil.getDataFromExcel("Organization",1,2)+ranNum;
+//		
+//		String website=eutil.getDataFromExcel("Organization",1,3);
+//		
+//		String option=eutil.getDataFromExcel("Organization",2,4);
+//		
 		HomePage hp=new HomePage(driver);
 		
 		hp.getContactsLink().click();

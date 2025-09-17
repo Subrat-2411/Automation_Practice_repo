@@ -3,7 +3,6 @@ package demo;
 import java.time.Duration;
 import java.util.Set;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

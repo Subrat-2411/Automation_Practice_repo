@@ -40,7 +40,7 @@ public class ExcelUtility {
 	 */
 	public int getRowCount(String sheetName) throws IOException
 	{
-		FileInputStream fis=new FileInputStream("C:\\Users\\Rutusmita prusty\\OneDrive\\Desktop\\CommonData\\VTigerCRMData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/VTigerCRMData.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		
@@ -60,7 +60,7 @@ public class ExcelUtility {
 
 	public void setDataIntoExcel(String sheetName,int rownum,int colnum,String data) throws IOException
 	{
-		FileInputStream fis=new FileInputStream("C:\\Users\\Rutusmita prusty\\OneDrive\\Desktop\\CommonData\\VTigerCRMData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/VTigerCRMData.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		
@@ -68,7 +68,7 @@ public class ExcelUtility {
 		
 		cell.setCellValue(data);
 		
-		FileOutputStream fos=new FileOutputStream("C:\\Users\\Rutusmita prusty\\OneDrive\\Desktop\\CommonData\\VTigerCRMData.xlsx");
+		FileOutputStream fos=new FileOutputStream("./src/test/resources/TestData/VTigerCRMData.xlsx");
 		
 		wb.write(fos);
 		

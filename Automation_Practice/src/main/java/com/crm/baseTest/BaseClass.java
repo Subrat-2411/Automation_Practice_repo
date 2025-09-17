@@ -14,7 +14,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
+import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.crm.Org.OR.HomePage;
@@ -22,6 +23,7 @@ import com.crm.Org.OR.LoginPage;
 import com.crm.generic.WebDriverUtility.WebDriverUtility;
 import com.crm.generic.databaseUtility.DataBaseUtility;
 import com.crm.generic.fileUtility.FileUtility;
+import com.crm.generic.objectUtility.UtilityClassObject;
 
 public class BaseClass {
 
@@ -46,9 +48,16 @@ public class BaseClass {
 		
 		
 	}
+	
+	@BeforeTest
+	public void beforeTest()
+	{
+		//System.out.println("Running before <test> tag ");
+	}
+	
 	@Parameters("browser")
 	@BeforeClass(groups = {"RegressionTest","SmokeTest"})
-	public void openBrowser(@Optional("chrome") String browser) throws IOException
+	public void openBrowser(/*@Optional("chrome")*/String browser) throws IOException
 	{
 //		String browser = futil.getDataFromPropertyFile("browser");
 		
@@ -69,11 +78,11 @@ public class BaseClass {
 		
 		else
 			driver=new ChromeDriver();
+		UtilityClassObject.setDriver(driver);
 		
 		sdriver=driver;
 		
 //		wutil.maximizeWindow(driver);
-		System.out.println("------------");
 
 		
 		wutil.implicitWait(driver);
