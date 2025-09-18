@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 15 16:06:27 IST 2025</td>
+<td>Started on:</td><td>Thu Sep 18 15:29:12 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7690 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21890 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNGExamples.SearchProductTest.searchProductTest()'><b>searchProductTest</b><br>Test class: testNGExamples.SearchProductTest<br/>
-<a href="#Output-716972621" onClick='toggleBox("Output-716972621", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-716972621" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-716972621">
-By.xpath: //button[text()='Continue shopping']<br/>
-By.xpath: //input[@id='twotabsearchtextbox']<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
+<td title='practice.FlipkartPriceTest.flipkartPriceTest()'><b>flipkartPriceTest</b><br>Test class: practice.FlipkartPriceTest<br>Parameters: samsung double door refrigerator, Samsung 330 L Frost Free Double Door 2 Star Convertible Refrigerator  with 5-in-1, Digital Inverter, W…, 2</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2cb5e06df9b04e04acd55684e35686e3, sendKeysToElement {id=f.F8FCB6DD3BB8A2686B1D428D5C49C63E.d.6DA00CE56C581814377FFE761F1B2831.e.15, value=[Ljava.lang.CharSequence;@30cecdca}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\RUTUSM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52406/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2cb5e06df9b04e04acd55684e35686e3)] -&gt; xpath: //input[@id=&apos;twotabsearchtextbox&apos;]]
-Session ID: 2cb5e06df9b04e04acd55684e35686e3
+Command: [d82af7cb65b9a020cd5bc86bcd60d53d, sendKeysToElement {id=f.AAEF0033385BCFD4B02201D097F1A905.d.39A7D5B470E18852A619061DB004AFE7.e.1, value=[Ljava.lang.CharSequence;@bc0f53b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\RUTUSM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65317/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d82af7cb65b9a020cd5bc86bcd60d53d)] -&gt; xpath: //input[@name=&apos;q&apos;]]
+Session ID: d82af7cb65b9a020cd5bc86bcd60d53d
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -107,13 +99,7 @@ Session ID: 2cb5e06df9b04e04acd55684e35686e3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
-	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$z0nVkkxW.sendKeys(Unknown Source)
-	at testNGExamples.SearchProductTest.searchProductTest(SearchProductTest.java:34)
+	at practice.FlipkartPriceTest.flipkartPriceTest(FlipkartPriceTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -140,17 +126,17 @@ Session ID: 2cb5e06df9b04e04acd55684e35686e3
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace716972621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace716972621'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
+</pre></div><a href='#' onClick='toggleBox("stack-trace595663369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace595663369'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2cb5e06df9b04e04acd55684e35686e3, sendKeysToElement {id=f.F8FCB6DD3BB8A2686B1D428D5C49C63E.d.6DA00CE56C581814377FFE761F1B2831.e.15, value=[Ljava.lang.CharSequence;@30cecdca}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\RUTUSM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52406/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2cb5e06df9b04e04acd55684e35686e3)] -&gt; xpath: //input[@id=&apos;twotabsearchtextbox&apos;]]
-Session ID: 2cb5e06df9b04e04acd55684e35686e3
+Command: [d82af7cb65b9a020cd5bc86bcd60d53d, sendKeysToElement {id=f.AAEF0033385BCFD4B02201D097F1A905.d.39A7D5B470E18852A619061DB004AFE7.e.1, value=[Ljava.lang.CharSequence;@bc0f53b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\RUTUSM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65317/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d82af7cb65b9a020cd5bc86bcd60d53d)] -&gt; xpath: //input[@name=&apos;q&apos;]]
+Session ID: d82af7cb65b9a020cd5bc86bcd60d53d
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -163,13 +149,7 @@ Session ID: 2cb5e06df9b04e04acd55684e35686e3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
-	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$z0nVkkxW.sendKeys(Unknown Source)
-	at testNGExamples.SearchProductTest.searchProductTest(SearchProductTest.java:34)
+	at practice.FlipkartPriceTest.flipkartPriceTest(FlipkartPriceTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -197,8 +177,27 @@ Session ID: 2cb5e06df9b04e04acd55684e35686e3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>7</td>
-<td>testNGExamples.SearchProductTest@4d5d943d</td></tr>
+<td>3</td>
+<td>practice.FlipkartPriceTest@397fbdb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='practice.FlipkartPriceTest.flipkartPriceTest()'><b>flipkartPriceTest</b><br>Test class: practice.FlipkartPriceTest<br>Parameters: tv, MarQ by Flipkart 80 cm (32 inch) HD Ready LED TV, 3</td>
+<td></td>
+<td>9</td>
+<td>practice.FlipkartPriceTest@397fbdb</td></tr>
+<tr>
+<td title='practice.FlipkartPriceTest.flipkartPriceTest()'><b>flipkartPriceTest</b><br>Test class: practice.FlipkartPriceTest<br>Parameters: iphone15, Apple iPhone 15 (Black, 128 GB), 1</td>
+<td></td>
+<td>8</td>
+<td>practice.FlipkartPriceTest@397fbdb</td></tr>
 </table><p>
 </body>
 </html>
