@@ -27,7 +27,7 @@ public class SmokeTest {
 		
 		driver.get("https://www.flipkart.com/");
 		
-		System.out.println("smokeTest");
+		System.out.println("smokeTest is Passed.");
 		
 	}
 	
